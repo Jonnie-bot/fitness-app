@@ -9,7 +9,7 @@ type ValueProps = {
 
 const Value = ({label, value}: ValueProps) => {
   return (
-    <View style={styles.valueContainer}>  
+    <View>  
         <Text style={styles.label}>{label}</Text>
         <Text style={styles.value}>{value}</Text>
   </View>
@@ -17,10 +17,6 @@ const Value = ({label, value}: ValueProps) => {
 }
 
 const styles = StyleSheet.create({
-    valueContainer: {
-        marginRight: 50,
-        marginVertical: 10,
-      },
       label: {
         color: 'white',
         fontSize: 20,
